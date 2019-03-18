@@ -6,13 +6,13 @@
   <div class='emojis'>
     <p id='happy'>😀</p>
     <p id='lol'>😂</p>
-    <p id='stars'>🤩</p>
     <p id='whistle'>😘</p>
+    <p id='liar'>🤥</p>
   </div>
   <div class='emojis'>
+    <p id='wtf'>😳</p>
+    <p id='omg'>😧</p>
     <p id='mad'>😠</p>
-    <p id='wtf'>  😳</p>
-    <p id='liar'>🤥</p>
     <p id='blow-steam'>😤</p>
   </div>
   <div class='emojis'>
@@ -78,7 +78,7 @@
   function playMadDude() {
     madDude.play();
   }
-  var ohMyGod = new Audio('./tracks/oh-my-god.wav');
+  var ohMyGod = new Audio('./tracks/omg.m4a');
   function playOhMyGod() {
     ohMyGod.play();
   }
@@ -104,12 +104,12 @@
 
   document.getElementById('happy').addEventListener('click', playAwesome);
   document.getElementById('lol').addEventListener('click', playLol);
-  document.getElementById('stars').addEventListener('click', playOhMyGod);
   document.getElementById('whistle').addEventListener('click', playWhistle);
-
-  document.getElementById('mad').addEventListener('click', playDontGetMad);
-  document.getElementById('wtf').addEventListener('click', playWtf);
   document.getElementById('liar').addEventListener('click', playLyingSonOfA);
+
+  document.getElementById('wtf').addEventListener('click', playWtf);
+  document.getElementById('omg').addEventListener('click', playOhMyGod);
+  document.getElementById('mad').addEventListener('click', playDontGetMad);
   document.getElementById('blow-steam').addEventListener('click', playIllBeBack);
 
   document.getElementById('scared').addEventListener('click', playScared);
