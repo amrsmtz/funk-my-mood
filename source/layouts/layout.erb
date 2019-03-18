@@ -25,6 +25,10 @@
 </html>
 
 <script>
+  var asshole = new Audio('./tracks/asshole.m4a');
+  function playAsshole() {
+    asshole.play();
+  }
   var awesome = new Audio('./tracks/awesome.mp3');
   function playAwesome() {
     awesome.play();
@@ -41,6 +45,10 @@
   function playFuckYou() {
     fuckYou.play();
   }
+  var fuckingFreezing = new Audio('./tracks/fucking-freezing.m4a');
+  function playFuckingFreezing() {
+    fuckingFreezing.play();
+  }
   var makeMyDay = new Audio('./tracks/go-ahead-make-my-day.m4a');
   function playMakeMyDay() {
     makeMyDay.play();
@@ -49,9 +57,17 @@
   function playIllBeBack() {
     illBeBack.play();
   }
+  var whistle = new Audio('./tracks/whistle.wav');
+  function playWhistle() {
+    whistle.play();
+  }
   var lol = new Audio('./tracks/lol.wav');
   function playLol() {
     lol.play();
+  }
+  var lyingSonOfA = new Audio('./tracks/lying-son-of-a.m4a');
+  function playLyingSonOfA() {
+    lyingSonOfA.play();
   }
   var madDude = new Audio('./tracks/mad-dude.wav');
   function playMadDude() {
@@ -73,6 +89,10 @@
   function playWhistle() {
     whistle.play();
   }
+  var wtf = new Audio('./tracks/wtf.m4a');
+  function playWtf() {
+    wtf.play();
+  }
   function playTrack(track) {
     track.play();
   }
@@ -82,10 +102,15 @@
   document.getElementById('stars').addEventListener('click', playOhMyGod);
   document.getElementById('whistle').addEventListener('click', playWhistle);
 
+  document.getElementById('mad').addEventListener('click', playAsshole);
+  document.getElementById('wtf').addEventListener('click', playWtf);
+  document.getElementById('liar').addEventListener('click', playLyingSonOfA);
   document.getElementById('blow-steam').addEventListener('click', playIllBeBack);
+
   document.getElementById('scared').addEventListener('click', playScared);
-  document.getElementById('mad').addEventListener('click', playMakeMyDay);
-  document.getElementById('mad-dude').addEventListener('click', playMadDude);
+  document.getElementById('cold').addEventListener('click', playFuckingFreezing);
+  document.getElementById('very-mad').addEventListener('click', playMakeMyDay);
+  document.getElementById('insult').addEventListener('click', playMadDude);
 
   document.getElementById('thumb-up').addEventListener('click', playClaps);
   document.getElementById('thumb-down').addEventListener('click', playBoo);
