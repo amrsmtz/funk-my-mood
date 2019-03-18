@@ -24,25 +24,18 @@ body {
 }
 
 .container {
-  max-width: 656px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .emojis {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   p {
     margin: 5% 5% 0 5%;
     font-size: 4em;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .emojis p {
-    margin: 3% 3% 0 3%;
   }
 }
