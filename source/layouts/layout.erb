@@ -9,9 +9,10 @@
     <title><%= current_page.data.title || "Funk My Mood" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
-
+    <!-- Meta Tags -->
+    <%= display_meta_tags site: 'Funk My Mood', description: 'Do not click the emojis' %>
+    <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet'>
-
     <!-- Favicon -->
     <link rel="icon" href="<%= image_path "favicon-32x32.png" %>">
     <link rel="apple-touch-icon" sizes="180x180" href="<%= image_path "apple-touch-icon.png" %>">
