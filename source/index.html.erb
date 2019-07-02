@@ -12,7 +12,7 @@
   <div class='emojis'>
     <p id='in-your-ass'>🍑</p>
     <p id='egg-plant'>🍆</p>
-    <p id='lemon'>🍋</p>
+    <p id='cherry'>🍒</p>
     <p id='banana'>🍌</p>
   </div>
   <div class='emojis'>
@@ -39,6 +39,10 @@
   var awesome = new Audio('./tracks/awesome.mp3');
   function playAwesome() {
     awesome.play();
+  }
+  var batLesCouilles = new Audio('./tracks/bat-les-couilles.mp4');
+  function playBatLesCouilles() {
+    batLesCouilles.play();
   }
   var boo = new Audio('./tracks/boo.wav');
   function playBoo() {
@@ -119,7 +123,7 @@
 
   document.getElementById('in-your-ass').addEventListener('click', playInYourAss);
   document.getElementById('thumb-down').addEventListener('click', playBoo);
-  document.getElementById('perfect').addEventListener('click', playPerfectTiming);
+  document.getElementById('cherry').addEventListener('click', playBatLesCouilles);
   document.getElementById('middle-finger').addEventListener('click', playFuckYou);
 
   document.getElementById('wtf').addEventListener('click', playWtf);
