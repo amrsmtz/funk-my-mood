@@ -10,22 +10,28 @@
     <p id='liar'>🤥</p>
   </div>
   <div class='emojis'>
+    <p id='in-your-ass'>🍑</p>
+    <p id='thumb-down'>👎</p>
+    <p id='perfect'>👌</p>
+    <p id='middle-finger'>🖕</p>
+  </div>
+  <div class='emojis'>
     <p id='wtf'>😳</p>
     <p id='omg'>😧</p>
     <p id='mad'>😠</p>
     <p id='blow-steam'>😤</p>
   </div>
   <div class='emojis'>
-    <p id='scared'>😱</p>
-    <p id='cold'>🥶</p>
-    <p id='very-mad'>😡</p>
-    <p id='insult'>🤬</p>
-  </div>
-  <div class='emojis'>
     <p id='thumb-up'>👍</p>
     <p id='thumb-down'>👎</p>
     <p id='perfect'>👌</p>
     <p id='middle-finger'>🖕</p>
+  </div>
+  <div class='emojis'>
+    <p id='scared'>😱</p>
+    <p id='cold'>🥶</p>
+    <p id='very-mad'>😡</p>
+    <p id='insult'>🤬</p>
   </div>
 </div>
 
@@ -57,6 +63,10 @@
   var makeMyDay = new Audio('./tracks/go-ahead-make-my-day.m4a');
   function playMakeMyDay() {
     makeMyDay.play();
+  }
+  var inYourAss = new Audio('./tracks/in-your-ass.m4a');
+  function playInYourAss() {
+    inYourAss.play();
   }
   var illBeBack = new Audio('./tracks/i-ll-be-back.m4a');
   function playIllBeBack() {
@@ -106,6 +116,11 @@
   document.getElementById('lol').addEventListener('click', playLol);
   document.getElementById('whistle').addEventListener('click', playWhistle);
   document.getElementById('liar').addEventListener('click', playLyingSonOfA);
+
+  document.getElementById('in-your-ass').addEventListener('click', playInYourAss);
+  document.getElementById('thumb-down').addEventListener('click', playBoo);
+  document.getElementById('perfect').addEventListener('click', playPerfectTiming);
+  document.getElementById('middle-finger').addEventListener('click', playFuckYou);
 
   document.getElementById('wtf').addEventListener('click', playWtf);
   document.getElementById('omg').addEventListener('click', playOhMyGod);
