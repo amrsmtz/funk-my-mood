@@ -10,7 +10,7 @@
     <p id='liar'>🤥</p>
   </div>
   <div class='emojis'>
-    <p id='in-your-ass'>🍑</p>
+    <p id='peach'>🍑</p>
     <p id='egg-plant'>🍆</p>
     <p id='cherry'>🍒</p>
     <p id='banana'>🍌</p>
@@ -19,7 +19,7 @@
     <p id='wtf'>😳</p>
     <p id='omg'>😧</p>
     <p id='mad'>😠</p>
-    <p id='blow-steam'>😤</p>
+    <p id='blow'>😤</p>
   </div>
   <div class='emojis'>
     <p id='thumb-up'>👍</p>
@@ -30,15 +30,19 @@
   <div class='emojis'>
     <p id='scared'>😱</p>
     <p id='cold'>🥶</p>
-    <p id='very-mad'>😡</p>
+    <p id='mad'>😡</p>
     <p id='insult'>🤬</p>
   </div>
 </div>
 
 <script>
-  var awesome = new Audio('./tracks/awesome.mp3');
-  function playAwesome() {
-    awesome.play();
+  var happy = new Audio('./tracks/happy.mp3');
+  function playHappy() {
+    happy.play();
+  }
+  var banana = new Audio('./tracks/banana.mp4');
+  function playBanana() {
+    banana.play();
   }
   var batLesCouilles = new Audio('./tracks/bat-les-couilles.mp4');
   function playBatLesCouilles() {
@@ -68,7 +72,7 @@
   function playMakeMyDay() {
     makeMyDay.play();
   }
-  var inYourAss = new Audio('./tracks/in-your-ass.m4a');
+  var inYourAss = new Audio('./tracks/peach.m4a');
   function playInYourAss() {
     inYourAss.play();
   }
@@ -116,24 +120,24 @@
     track.play();
   }
 
-  document.getElementById('happy').addEventListener('click', playAwesome);
+  document.getElementById('happy').addEventListener('click', playHappy);
   document.getElementById('lol').addEventListener('click', playLol);
   document.getElementById('whistle').addEventListener('click', playWhistle);
   document.getElementById('liar').addEventListener('click', playLyingSonOfA);
 
-  document.getElementById('in-your-ass').addEventListener('click', playInYourAss);
+  document.getElementById('peach').addEventListener('click', playInYourAss);
   document.getElementById('thumb-down').addEventListener('click', playBoo);
   document.getElementById('cherry').addEventListener('click', playBatLesCouilles);
-  document.getElementById('middle-finger').addEventListener('click', playFuckYou);
+  document.getElementById('banana').addEventListener('click', playBanana);
 
   document.getElementById('wtf').addEventListener('click', playWtf);
   document.getElementById('omg').addEventListener('click', playOhMyGod);
   document.getElementById('mad').addEventListener('click', playDontGetMad);
-  document.getElementById('blow-steam').addEventListener('click', playIllBeBack);
+  document.getElementById('blow').addEventListener('click', playIllBeBack);
 
   document.getElementById('scared').addEventListener('click', playScared);
   document.getElementById('cold').addEventListener('click', playFuckingFreezing);
-  document.getElementById('very-mad').addEventListener('click', playMakeMyDay);
+  document.getElementById('mad').addEventListener('click', playMakeMyDay);
   document.getElementById('insult').addEventListener('click', playMadDude);
 
   document.getElementById('thumb-up').addEventListener('click', playClaps);
