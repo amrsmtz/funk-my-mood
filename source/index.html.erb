@@ -10,7 +10,7 @@
     <p id='liar'>🤥</p>
 
     <p id='peach'>🍑</p>
-    <p id='egg-plant'>🍆</p>
+    <p id='eggplant'>🍆</p>
     <p id='cherry'>🍒</p>
     <p id='banana'>🍌</p>
 
@@ -65,6 +65,11 @@
   var inYourAss = new Audio('./tracks/peach.m4a');
   function playInYourAss() {
     inYourAss.play();
+  }
+  document.getElementById('eggplant').addEventListener('click', playEggplant);
+  var eggplant = new Audio('./tracks/eggplant.mp4');
+  function playEggplant() {
+    eggplant.play();
   }
   document.getElementById('cherry').addEventListener('click', playCherry);
   var cherry = new Audio('./tracks/cherry.mp4');
