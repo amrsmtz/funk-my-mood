@@ -8,140 +8,141 @@
     <p id='lol'>😂</p>
     <p id='whistle'>😘</p>
     <p id='liar'>🤥</p>
-  </div>
-  <div class='emojis'>
+
     <p id='peach'>🍑</p>
     <p id='egg-plant'>🍆</p>
     <p id='cherry'>🍒</p>
     <p id='banana'>🍌</p>
-  </div>
-  <div class='emojis'>
+
     <p id='wtf'>😳</p>
     <p id='omg'>😧</p>
     <p id='mad'>😠</p>
     <p id='blow'>😤</p>
-  </div>
-  <div class='emojis'>
+
     <p id='thumb-up'>👍</p>
     <p id='thumb-down'>👎</p>
     <p id='perfect'>👌</p>
     <p id='middle-finger'>🖕</p>
-  </div>
-  <div class='emojis'>
+
     <p id='scared'>😱</p>
     <p id='cold'>🥶</p>
-    <p id='mad'>😡</p>
+    <p id='very-mad'>😡</p>
     <p id='insult'>🤬</p>
   </div>
 </div>
 
 <script>
-  var happy = new Audio('./tracks/happy.mp3');
-  function playHappy() {
-    happy.play();
-  }
-  var banana = new Audio('./tracks/banana.mp4');
-  function playBanana() {
-    banana.play();
-  }
-  var batLesCouilles = new Audio('./tracks/bat-les-couilles.mp4');
-  function playBatLesCouilles() {
-    batLesCouilles.play();
-  }
-  var boo = new Audio('./tracks/boo.wav');
-  function playBoo() {
-    boo.play();
-  }
-  var claps = new Audio('./tracks/claps.wav');
-  function playClaps() {
-    claps.play();
-  }
-  var dontGetMad = new Audio('./tracks/dont-get-mad.m4a');
-  function playDontGetMad() {
-    dontGetMad.play();
-  }
-  var fuckYou = new Audio('./tracks/fuck-you.m4a');
-  function playFuckYou() {
-    fuckYou.play();
-  }
-  var fuckingFreezing = new Audio('./tracks/fucking-freezing.m4a');
-  function playFuckingFreezing() {
-    fuckingFreezing.play();
-  }
-  var makeMyDay = new Audio('./tracks/go-ahead-make-my-day.m4a');
-  function playMakeMyDay() {
-    makeMyDay.play();
-  }
-  var inYourAss = new Audio('./tracks/peach.m4a');
-  function playInYourAss() {
-    inYourAss.play();
-  }
-  var illBeBack = new Audio('./tracks/i-ll-be-back.m4a');
-  function playIllBeBack() {
-    illBeBack.play();
-  }
-  var whistle = new Audio('./tracks/whistle.wav');
-  function playWhistle() {
-    whistle.play();
-  }
-  var lol = new Audio('./tracks/lol.wav');
-  function playLol() {
-    lol.play();
-  }
-  var lyingSonOfA = new Audio('./tracks/lying-son-of-a.m4a');
-  function playLyingSonOfA() {
-    lyingSonOfA.play();
-  }
-  var madDude = new Audio('./tracks/mad-dude.wav');
-  function playMadDude() {
-    madDude.play();
-  }
-  var ohMyGod = new Audio('./tracks/omg.m4a');
-  function playOhMyGod() {
-    ohMyGod.play();
-  }
-  var perfectTiming = new Audio('./tracks/perfect-timing.mov');
-  function playPerfectTiming() {
-    perfectTiming.play();
-  }
-  var scared = new Audio('./tracks/scared.m4a');
-  function playScared() {
-    scared.play();
-  }
-  var whistle = new Audio('./tracks/whistle.wav');
-  function playWhistle() {
-    whistle.play();
-  }
-  var wtf = new Audio('./tracks/wtf.m4a');
-  function playWtf() {
-    wtf.play();
-  }
   function playTrack(track) {
     track.play();
   }
 
+  // Line 1
+
   document.getElementById('happy').addEventListener('click', playHappy);
+  var happy = new Audio('./tracks/happy.mp3');
+  function playHappy() {
+    happy.play();
+  }
   document.getElementById('lol').addEventListener('click', playLol);
+  var lol = new Audio('./tracks/lol.wav');
+  function playLol() {
+    lol.play();
+  }
   document.getElementById('whistle').addEventListener('click', playWhistle);
+  var whistle = new Audio('./tracks/whistle.wav');
+  function playWhistle() {
+    whistle.play();
+  }
   document.getElementById('liar').addEventListener('click', playLyingSonOfA);
+  var lyingSonOfA = new Audio('./tracks/lying-son-of-a.m4a');
+  function playLyingSonOfA() {
+    lyingSonOfA.play();
+  }
+
+  // Line 2
 
   document.getElementById('peach').addEventListener('click', playInYourAss);
-  document.getElementById('thumb-down').addEventListener('click', playBoo);
-  document.getElementById('cherry').addEventListener('click', playBatLesCouilles);
+  var inYourAss = new Audio('./tracks/peach.m4a');
+  function playInYourAss() {
+    inYourAss.play();
+  }
+  document.getElementById('cherry').addEventListener('click', playCherry);
+  var cherry = new Audio('./tracks/cherry.mp4');
+  function playCherry() {
+    cherry.play();
+  }
   document.getElementById('banana').addEventListener('click', playBanana);
+  var banana = new Audio('./tracks/banana.mp4');
+  function playBanana() {
+    banana.play();
+  }
+
+  // Line 3
 
   document.getElementById('wtf').addEventListener('click', playWtf);
+  var wtf = new Audio('./tracks/wtf.m4a');
+  function playWtf() {
+    wtf.play();
+  }
   document.getElementById('omg').addEventListener('click', playOhMyGod);
+  var ohMyGod = new Audio('./tracks/omg.m4a');
+  function playOhMyGod() {
+    ohMyGod.play();
+  }
   document.getElementById('mad').addEventListener('click', playDontGetMad);
+  var dontGetMad = new Audio('./tracks/dont-get-mad.m4a');
+  function playDontGetMad() {
+    dontGetMad.play();
+  }
   document.getElementById('blow').addEventListener('click', playIllBeBack);
+  var illBeBack = new Audio('./tracks/i-ll-be-back.m4a');
+  function playIllBeBack() {
+    illBeBack.play();
+  }
 
-  document.getElementById('scared').addEventListener('click', playScared);
-  document.getElementById('cold').addEventListener('click', playFuckingFreezing);
-  document.getElementById('mad').addEventListener('click', playMakeMyDay);
-  document.getElementById('insult').addEventListener('click', playMadDude);
+  // Line 4
 
   document.getElementById('thumb-up').addEventListener('click', playClaps);
+  var claps = new Audio('./tracks/claps.wav');
+  function playClaps() {
+    claps.play();
+  }
   document.getElementById('thumb-down').addEventListener('click', playBoo);
+  var boo = new Audio('./tracks/boo.wav');
+  function playBoo() {
+    boo.play();
+  }
   document.getElementById('perfect').addEventListener('click', playPerfectTiming);
+  var perfectTiming = new Audio('./tracks/perfect-timing.mov');
+  function playPerfectTiming() {
+    perfectTiming.play();
+  }
   document.getElementById('middle-finger').addEventListener('click', playFuckYou);
+  var fuckYou = new Audio('./tracks/fuck-you.m4a');
+  function playFuckYou() {
+    fuckYou.play();
+  }
+
+  // Line 5
+
+  document.getElementById('scared').addEventListener('click', playScared);
+  var scared = new Audio('./tracks/scared.m4a');
+  function playScared() {
+    scared.play();
+  }
+  document.getElementById('cold').addEventListener('click', playFuckingFreezing);
+  var fuckingFreezing = new Audio('./tracks/fucking-freezing.m4a');
+  function playFuckingFreezing() {
+    fuckingFreezing.play();
+  }
+  document.getElementById('very-mad').addEventListener('click', playMakeMyDay);
+  var makeMyDay = new Audio('./tracks/go-ahead-make-my-day.m4a');
+  function playMakeMyDay() {
+    makeMyDay.play();
+  }
+  document.getElementById('insult').addEventListener('click', playMadDude);
+  var madDude = new Audio('./tracks/mad-dude.wav');
+  function playMadDude() {
+    madDude.play();
+  }
 </script>
